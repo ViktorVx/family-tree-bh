@@ -18,30 +18,30 @@ public class InMemoryTestDB {
         storage.put(PERSON_STORAGE, new HashSet<>());
         Person pva = Person.builder()
                 .id(UUID.randomUUID().toString())
-                .lastName("Петров")
-                .firstName("Виктор")
-                .middleName("Анатольевич")
+                .lastName("Stone")
+                .firstName("Viktor")
+                .middleName("A")
                 .build();
         Person pus = Person.builder()
                 .id(UUID.randomUUID().toString())
-                .lastName("Петрова")
-                .firstName("Юлия")
-                .middleName("Сергеевна")
+                .lastName("Stone")
+                .firstName("Julia")
+                .middleName("S")
                 .build();
         Person pav = Person.builder()
                 .id(UUID.randomUUID().toString())
-                .lastName("Петров")
-                .firstName("Артур")
-                .middleName("Викторович")
+                .lastName("Stone")
+                .firstName("Arthur")
+                .middleName("V")
                 .build();
         pav.setMother(pus);
         pav.setFather(pva);
 
         Person pgv = Person.builder()
                 .id(UUID.randomUUID().toString())
-                .lastName("Петров")
-                .firstName("Герман")
-                .middleName("Викторович")
+                .lastName("Stone")
+                .firstName("Herman")
+                .middleName("V")
                 .build();
         pgv.setMother(pus);
         pgv.setFather(pva);
